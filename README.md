@@ -4,7 +4,7 @@ A classic **Snake Game** built with **Vanilla JavaScript**, **HTML**, and **CSS*
 
 ## 🎮 Live Demo
 
-🔗 [Play Now](https://your-deployed-link.com)
+🔗 [Play Now](https://malik-snake-game.vercel.app/)
 
 ## 🧠 What I Learned
 
