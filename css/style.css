@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/asset/background-snake.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    margin-left: -25rem;
+    background: linear-gradient(rgb(26, 166, 26), rgb(34, 143, 179));
+    width: 40vw;
+    height: 80vh;
+    border: 2px solid rgb(34, 143, 179);
+    box-shadow: 10px 10px 12px 0px rgba(89, 153, 137, 0.81);
+    display: grid;
+    grid-template-columns: repeat(18, 4fr);
+    grid-template-rows: repeat(18, 4fr);
+    border-radius: 3px;
+}
+
+#score {
+    position: absolute;
+    top: 12px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-style: italic;
+}
+
+#hiscore {
+    position: absolute;
+    top: 57px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-style: italic;
+}
+
+
+
+/* CSS */
+#resetHighScore,
+#startBtn {
+    background-color: #229c67;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+    top: 7rem;
+    right: 19rem;
+}
+
+#resetHighScore:hover,
+#resetHighScore:focus {
+    background-color: #249061;
+}
+
+#resetHighScore {
+    top: 10rem;
+    right: 16.5rem;
+}
+
+
+.head {
+    background: linear-gradient(rgb(139, 214, 28), rgb(16, 72, 82));
+    border: 2px solid rgb(34, 4, 34);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake {
+    background: linear-gradient(rgb(116, 133, 33), rgb(40, 49, 23));
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+
+@media (max-width:500px) {
+    #board {
+        margin-left: -10rem;
+    }
+
+    #score {
+        font-size: 30px;
+        right: 20px;
+    }
+
+    #hiscore {
+        font-size: 30px;
+        right: 20px;
+    }
+
+    #startBtn {
+        top: 7rem;
+        right: 1rem;
+    }
+
+    #resetHighScore {
+        top: 10rem;
+        right: 1rem;
+    }
+}
+
+@media (min-width:501px) and (max-width:725px) {
+    #board {
+        margin-left: -20rem;
+    }
+
+    #score {
+        font-size: 30px;
+        right: 20px;
+    }
+
+    #hiscore {
+        font-size: 30px;
+        right: 20px;
+    }
+
+    #resetHighScore {
+        top: 7rem;
+        right: 2rem;
+    }
+
+    #startBtn {
+        top: 7rem;
+        right: 1rem;
+    }
+
+    #resetHighScore {
+        top: 10rem;
+        right: 1rem;
+    }
+}
